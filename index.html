@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="jvq3Y6m92LFIXyO3PuKQT6x8Og7u0_BzUVEgCG5cPHk" />
+    <title>CheckoutForm</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/651fa61eb5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="images/form-favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-box card">
+        <h1>Checkout</h1>
+      </header>
+
+      <div class="box one card">
+        <h1>Contact Information</h1>
+
+        <form action="" class="form-area">
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              class="user-input"
+              type="email"
+              id="email"
+              placeholder="Enter Your E-mail"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+              class="user-input"
+              type="tel"
+              id="phone"
+              placeholder="Enter Your Phone"
+            />
+          </div>
+        </form>
+      </div>
+
+      <div class="box two card">
+        <h1>Shipping Address</h1>
+
+        <form action="" class="form-area">
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input
+              class="user-input"
+              type="text"
+              id="full-name"
+              placeholder="Enter Your Full Name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input
+              class="user-input"
+              type="text"
+              id="address"
+              placeholder="Enter Your Full Name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="city">City</label>
+            <input
+              class="user-input"
+              type="text"
+              id="city"
+              placeholder="Enter Your City"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="country">Country</label>
+            <select class="user-input" name="country" id="country">
+              <option value="turkey">Turkey</option>
+              <option value="germany">Germany</option>
+              <option value="france">France</option>
+              <option value="italy">Italy</option>
+              <option value="spain">Spain</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="post-code">Post Code</label>
+            <input
+              class="user-input"
+              type="text"
+              id="post-code"
+              placeholder="Enter Your Post Code"
+            />
+          </div>
+
+          <div class="form-group checkbox">
+            <input type="checkbox" id="save-info" />
+            <label for="save-info">Save This Information</label>
+          </div>
+        </form>
+      </div>
+
+      <div class="box three card">
+        <h1>Shopping Cart</h1>
+        <div class="product-box one">
+          <img src="images/bag.png" alt="backpack" width="130" height="145" />
+          <div class="product-details">
+            <h2>Vintage <br />Backpack</h2>
+            <p>$54.99 <del>$94.99</del></p>
+            <div class="product-quantity">
+              <p>
+                <button>
+                  <i class="fa-solid fa-minus" aria-hidden="true"></i></button
+                >1<button>
+                  <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-box two">
+          <img src="images/shoes.png" alt="shoes" width="130" height="145" />
+          <div class="product-details">
+            <h2>
+              Levis <br />
+              Shoes
+            </h2>
+            <p>$74.99 <del>$124.99</del></p>
+            <div class="product-quantity">
+              <p>
+                <button>
+                  <i class="fa-solid fa-minus" aria-hidden="true"></i></button
+                >1<button>
+                  <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="shipping-total">
+          <h2>Shipping</h2>
+          <p>$19</p>
+          <h2>Total</h2>
+          <p>$148.98</p>
+        </div>
+      </div>
+
+      <footer class="footer-box card">
+        <div>
+          <button>Continue</button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

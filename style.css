@@ -1,0 +1,156 @@
+html {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 60%;
+    height: 98vh;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.5fr 3fr 5fr 0.5fr;
+    gap: 1.25rem;
+}
+
+.header-box,
+.footer-box {
+    grid-column: 1/3;
+}
+
+.box.two {
+    grid-row: 3/4;
+}
+
+.box.three {
+    grid-row: 2/4;
+    grid-column: 2/3;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 1rem;
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header-box,
+.footer-box {
+    background-color: burlywood;
+    justify-content: center;
+}
+
+.box.one {
+    background-color: steelblue;
+    padding: 1.8rem;
+    color: #fff;
+}
+
+.box.two {
+    background-color: skyblue;
+    padding: 1.8rem;
+}
+
+.box.three {
+    background-color: lightblue;
+    padding: 1.8rem;
+    justify-content: space-between;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.checkbox {
+    display: inline;
+}
+
+.user-input {
+    width: 18rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    padding-left: 0.6rem;
+}
+
+.product-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 1.25rem;
+    padding: 1.25rem;
+}
+
+.box.one h1,
+.box.two h1 {
+    margin-bottom: 1.8rem;
+}
+
+.box.three h1 {
+    align-self: center;
+}
+
+.shipping-total {
+    align-self: flex-end;
+}
+
+.product-details h2,
+.product-details p {
+    padding: 0.5rem;
+}
+
+button {
+    color: #fff;
+    width: 2rem;
+    height: 2rem;
+    background-color: darkcyan;
+    border-radius: 0.5rem;
+    margin: 0.6rem;
+    cursor: pointer;
+}
+
+.footer-box button {
+    width: 12.5rem;
+    font-size: 1.5rem;
+    background-color: burlywood;
+    border: none;
+}
+
+.product-quantity p,
+.product-details p {
+    font-size: 1.25rem;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    border-radius: 1rem;
+}
