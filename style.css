@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,11 +9,12 @@
 }
 
 body {
-    font-size: 16px;
+    height: 100vh;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     background-image: url(images/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,13 +22,12 @@ body {
 
 .container {
     width: 60%;
-    height: 88vh;
+    height: 98vh;
 
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 3fr 5fr 1fr;
-    gap: 20px;
-    
+    grid-template-rows: 0.5fr 3fr 5fr 0.5fr;
+    gap: 1.25rem;
 }
 
 .header-box,
@@ -44,34 +48,31 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 15px;
+
+    border-radius: 1rem;
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.2);
 }
 
 .header-box,
 .footer-box {
-    height: 40px;
     background-color: burlywood;
     justify-content: center;
-}
-.header-box{
-    margin-top: 10px;
 }
 
 .box.one {
     background-color: steelblue;
-    padding: 30px;
+    padding: 1.8rem;
     color: #fff;
 }
 
 .box.two {
     background-color: skyblue;
-    padding: 30px;
+    padding: 1.8rem;
 }
 
 .box.three {
     background-color: lightblue;
-    padding: 30px;
+    padding: 1.8rem;
     justify-content: space-between;
 }
 
@@ -85,15 +86,14 @@ body {
 }
 
 .user-input {
-    width: 280px;
-    height: 40px;
-    margin-bottom: 15px;
-    padding-left: 10px;
+    width: 18rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    padding-left: 0.6rem;
 }
 
 .product-box {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -101,15 +101,15 @@ body {
 .product-details {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-left: 20px;
-    padding: 20px;
+
+    margin-left: 1.25rem;
+    padding: 1.25rem;
 }
 
 .box.one h1,
 .box.two h1 {
-    margin-bottom: 30px;
+    margin-bottom: 1.8rem;
 }
 
 .box.three h1 {
@@ -121,39 +121,36 @@ body {
 }
 
 .product-details h2,
-p {
-    padding: 8px;
+.product-details p {
+    padding: 0.5rem;
 }
 
 button {
     color: #fff;
-    width: 25px;
-    height: 25px;
+    width: 2rem;
+    height: 2rem;
     background-color: darkcyan;
-    border-radius: 10px;
-    margin: 0px 10px;
+    border-radius: 0.5rem;
+    margin: 0.6rem;
     cursor: pointer;
 }
 
 .footer-box button {
-    color: #fff;
+    width: 12.5rem;
+    font-size: 1.5rem;
     background-color: burlywood;
-    width: 200px;
-    font-size: 25px;
     border: none;
 }
 
-.product-quantity p {
-    font-size: 20px;
-}
-
+.product-quantity p,
 .product-details p {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .card:hover {
     box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.5);
 }
+
 img {
-    border-radius: 15px;
+    border-radius: 1rem;
 }
